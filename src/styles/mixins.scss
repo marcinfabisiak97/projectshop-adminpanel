@@ -1,3 +1,8 @@
 @mixin calcHeight($arg) {
   height: calc(100vh - #{$arg});
 }
+@mixin boxShadow() {
+  -webkit-box-shadow: 0px 0px 8px -1px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 0px 8px -1px rgba(66, 68, 90, 1);
+  box-shadow: 0px 0px 8px -1px rgba(66, 68, 90, 1);
+}

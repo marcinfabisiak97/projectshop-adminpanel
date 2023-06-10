@@ -1,97 +1,14 @@
 import "./App.scss";
 import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
 function App() {
   return (
     <div>
       <Navbar />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
-      Test
-      <br />
+      <div className="mainContainer">
+        <Sidebar />
+        <div className="others">others</div>
+      </div>
     </div>
   );
 }

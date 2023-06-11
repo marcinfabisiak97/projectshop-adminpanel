@@ -1,0 +1,5 @@
+.widgetLarge {
+  flex: 2;
+  @include boxShadow;
+  padding: 20px;
+}

@@ -1,41 +1,34 @@
 import { ArrowDownward, ArrowUpward } from "@mui/icons-material";
 
 const Info = () => {
+  const infoList = [
+    { title: "Revanue", money: 2500, moenyRate: -12, negative: true },
+    { title: "Sales", money: 5500, moenyRate: -1, negative: true },
+    { title: "Cost", money: 2300, moenyRate: +2, negative: false },
+  ];
   return (
     <div className="info">
-      <div className="info__item">
-        <span className="info__title">Revanue</span>
-        <div className="info__moneyContainer">
-          <span className="info__money">2,500PLN</span>
-          <span className="info__moneyRate">
-            -12
-            <ArrowDownward className="info__icon negative" />
-          </span>
+      {infoList.map((info, index) => (
+        <div className="info__item" key={index}>
+          <span className="info__title">{info.title}</span>
+          <div className="info__moneyContainer">
+            <span className="info__money">{info.money}PLN</span>
+            <span className="info__moneyRate">
+              {info.moenyRate}
+              {info.negative ? (
+                <ArrowDownward
+                  className={`info__icon  ${info.negative ? "negative" : ""}`}
+                />
+              ) : (
+                <ArrowUpward
+                  className={`info__icon  ${info.negative ? "negative" : ""}`}
+                />
+              )}
+            </span>
+          </div>
+          <span className="info__subtitle">Comapre to last month</span>
         </div>
-        <span className="info__subtitle">Comapre to last month</span>
-      </div>
-      <div className="info__item">
-        <span className="info__title">Sales</span>
-        <div className="info__moneyContainer">
-          <span className="info__money">5,500PLN</span>
-          <span className="info__moneyRate">
-            -1
-            <ArrowDownward className="info__icon negative" />
-          </span>
-        </div>
-        <span className="info__subtitle">Comapre to last month</span>
-      </div>
-      <div className="info__item">
-        <span className="info__title">Cost</span>
-        <div className="info__moneyContainer">
-          <span className="info__money">2,300PLN</span>
-          <span className="info__moneyRate">
-            +2
-            <ArrowUpward className="info__icon" />
-          </span>
-        </div>
-        <span className="info__subtitle">Comapre to last month</span>
-      </div>
+      ))}
     </div>
   );
 };

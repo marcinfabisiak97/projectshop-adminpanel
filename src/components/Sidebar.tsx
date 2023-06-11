@@ -54,24 +54,22 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="sidebarContainer">
         {menuItems.map((menuItem, index) => (
-          <>
-            <div className="sidebarContainer__menu" key={index}>
-              <h3 className="sidebarContainer__title">{menuItem.title}</h3>
-              <ul className="sidebarContainer__list">
-                {menuItem.items.map((item, i) => (
-                  <li
-                    className={`sidebarContainer__listItem  ${
-                      item.active ? "active" : ""
-                    }`}
-                    key={i}
-                  >
-                    <item.icon className="sidebarContainer__listIcon" />
-                    {item.label}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </>
+          <div className="sidebarContainer__menu" key={index}>
+            <h3 className="sidebarContainer__title">{menuItem.title}</h3>
+            <ul className="sidebarContainer__list">
+              {menuItem.items.map((item, i) => (
+                <li
+                  className={`sidebarContainer__listItem  ${
+                    item.active ? "active" : ""
+                  }`}
+                  key={i}
+                >
+                  <item.icon className="sidebarContainer__listIcon" />
+                  {item.label}
+                </li>
+              ))}
+            </ul>
+          </div>
         ))}
       </div>
     </div>

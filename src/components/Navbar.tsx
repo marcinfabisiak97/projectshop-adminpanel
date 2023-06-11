@@ -1,4 +1,4 @@
-import { adminPhoto } from "../assets/exportAssets";
+import Images from "../assets/exportAssets";
 import { NotificationsNone, Language, Settings } from "@mui/icons-material";
 const Navbar = () => {
   const icons = [
@@ -23,7 +23,7 @@ const Navbar = () => {
             </div>
           ))}
           <img
-            src={adminPhoto}
+            src={Images.adminPhoto}
             alt="AdminPhoto"
             className="navContainer__image"
           />

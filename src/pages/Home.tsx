@@ -1,8 +1,8 @@
-import Chart from "../../components/Chart";
-import Info from "../../components/Info";
-import WidgetLarge from "../../components/WidgetLarge";
-import WidgetSmall from "../../components/WidgetSmall";
-import { dataOfUsers } from "../../exmapleData";
+import Chart from "../components/Chart";
+import Info from "../components/Info";
+import WidgetLarge from "../components/WidgetLarge";
+import WidgetSmall from "../components/WidgetSmall";
+import { dataOfUsers } from "../exmapleData";
 const Home = () => {
   return (
     <div className="home">

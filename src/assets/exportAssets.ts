@@ -4,5 +4,6 @@ import user2 from "./user2.jpg";
 import user3 from "./user3.jpg";
 import user4 from "./user4.jpg";
 import user5 from "./user5.jpg";
-const Images = { adminPhoto, user1, user2, user3, user4, user5 };
+import blender from "./blender.jpg";
+const Images = { adminPhoto, user1, user2, user3, user4, user5, blender };
 export default Images;

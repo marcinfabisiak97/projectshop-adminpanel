@@ -6,13 +6,21 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-type ChartProps = {
+type ChartData<T> = {
+  [key: string]: T;
+};
+type ChartProps<T> = {
   title: string;
-  data: { name: string; "Active User": number }[];
+  data: ChartData<T>[];
   dataKey: string;
   grid: boolean;
 };
-const Chart: React.FC<ChartProps> = ({ title, data, dataKey, grid }) => {
+const Chart: React.FC<ChartProps<number | string>> = ({
+  title,
+  data,
+  dataKey,
+  grid,
+}) => {
   return (
     <div className="chart">
       <h3 className="chart__title">{title}</h3>

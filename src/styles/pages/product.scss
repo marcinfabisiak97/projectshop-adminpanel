@@ -1,0 +1,112 @@
+.product {
+  flex: 4;
+  padding: 20px;
+  &__titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__addButton {
+    width: 80px;
+    border: none;
+    padding: 5px;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  &__top {
+    display: flex;
+  }
+  &__topLeft,
+  &__topRight {
+    flex: 1;
+  }
+  &__topRight {
+    margin: 20px;
+    padding: 20px;
+    @include boxShadow;
+  }
+  &__topInfo {
+    display: flex;
+    align-items: center;
+  }
+  &__topInfoImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  &__topInfoName {
+    font-weight: 600;
+  }
+  &__bottomInfo {
+    margin-top: 10px;
+  }
+  &__bottomInfoItem {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bottomInfoValue {
+    font-weight: 300;
+  }
+  &__bottom {
+    margin: 20px;
+    padding: 20px;
+    @include boxShadow;
+  }
+  &__form {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__formLeft {
+    display: flex;
+    flex-direction: column;
+  }
+  &__formLeft > label {
+    margin-bottom: 10px;
+    color: gray;
+  }
+  &__formLeft > input {
+    margin-bottom: 10px;
+    color: gray;
+    border: none;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+  }
+  &__formLeft > select {
+    margin-bottom: 10px;
+    color: gray;
+    border: none;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+  }
+  &__formRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__formRightUpload {
+    display: flex;
+    align-items: center;
+  }
+  &__formRightUploadImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  &__button {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
